@@ -63,7 +63,7 @@ class Register extends Component {
         if(userRole === 'applicant') {
             RoleForm = 
             <div>
-                <label htmlFor="skills">Skills (comma-separated):</label><br></br>
+                <label htmlFor="skills"><p className="text-white">Skills (comma-separated):</p></label><br></br>
                 <input
                     onChange={this.onChange}
                     value={this.state.skills}
@@ -76,7 +76,7 @@ class Register extends Component {
         else if(userRole === 'recruiter') {
             RoleForm = 
             <div>
-                <label htmlFor="phone_number">Phone No.</label><br></br>
+                <label htmlFor="phone_number"><p className="text-white">Phone No.</p></label><br></br>
                 <input
                     onChange={this.onChange}
                     value={this.state.phone_number}
@@ -94,15 +94,15 @@ class Register extends Component {
                     </Link>
                     <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                         <h4>
-                        <b>Register</b>
+                        <b className="text-white">Register</b>
                         </h4>
                         <p className="text-white">
-                        Already have an account? <Link to="/login">Log in</Link>
+                        Already have an account? <Link to="/login"><p className="text-white">Log in</p></Link>
                         </p>
                     </div>
                         <form noValidate onSubmit={this.onSubmit}>
                             <div className="input-field col s12">
-                                <label htmlFor="name">Role</label><br></br>
+                                <label htmlFor="name"><p className="text-white">Role</p></label><br></br>
                                 <select 
                                     value={this.state.role} 
                                     onChange={this.handleChange}

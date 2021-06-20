@@ -21,9 +21,9 @@ export default class Home extends Component {
         return (
             <Jumbotron fluid>
                 <Container>
-                    <h1 style={{ fontFamily:"monospace" }}>Welcome to Job Geeks</h1>
+                    <h1 style={{ fontFamily:"monospace" ,color:"white"}}>Welcome to Job Geeks</h1>
                     <p>
-                    <h6><b><i>!!!The easiest way to find your dream job!!!</i></b></h6>
+                    <h6 style={{color:"white"}}><b><i>!!!The easiest way to find your dream job!!!</i></b></h6>
                     </p>
                     <Link to="/login">
                         <Button 
@@ -40,7 +40,7 @@ export default class Home extends Component {
                     </Link>
                     <hr></hr>
                     <h6 className="text-white">
-                        Don't have an account? <Link to="/register">Register</Link>
+                        Don't have an account? <Link to="/register"><h6 className="text-white">Register</h6></Link>
                     </h6>
                 </Container>
             </Jumbotron>
